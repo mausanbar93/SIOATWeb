@@ -1,0 +1,24 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userAlias": "pnl_documento",
+        "designer|userClassName": "pnl_documento",
+        "flex": 1,
+        "header": false,
+        "height": null,
+        "id": "pnl_documento",
+        "layout": "vbox",
+        "title": "My Panel",
+        "width": null
+    },
+    "name": "MyPanel",
+    "designerId": "ef1c29d4-7720-4bcc-b733-baa3ca1979c4",
+    "viewControllerInstanceId": "7a478c04-ef2c-4638-b315-8d58afd2b353",
+    "viewModelInstanceId": "e577657d-450f-4ada-a38f-91020c3c5a96"
+}

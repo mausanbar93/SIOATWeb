@@ -1,0 +1,270 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|userAlias": "vtn_cargar_archivo",
+        "designer|userClassName": "vtn_cargar_archivo",
+        "height": 429,
+        "hidden": false,
+        "id": "vtn_cargar_archivo",
+        "layout": "vbox",
+        "modal": true,
+        "title": "RECOMENDACIONES E INSTRUCCIONES GENERALES BÁSICAS",
+        "width": 716
+    },
+    "name": "MyWindow",
+    "designerId": "ef48527f-fe68-4814-a80d-49d6c6b8936a",
+    "viewControllerInstanceId": "12dca136-fea1-4f51-a159-ede7421cca30",
+    "viewModelInstanceId": "e300c253-2cef-4742-ad03-c6b138a83c4d",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": null,
+                "height": 299,
+                "layout|flex": null,
+                "width": 499
+            },
+            "name": "MyContainer15",
+            "designerId": "a059a806-d50d-4d90-af79-f211d71bb487",
+            "cn": [
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "lbl_instrucciones",
+                        "fieldLabel": "",
+                        "height": 294,
+                        "value": [
+                            "Pensando en la comodidad del usuario, se creó una plantilla para el cual el usuario pueda digitar su balance, con el propósito de que el cliente no digite en cada celda el valor correspondiente, SIOAT de manera inteligente reconocerá las cuentas a utilizar con su respectivo valor, para que este proceso sea eficiente. El usuario responsablemente debe realizar este proceso:",
+                            "1. Descargar la planilla Cifras SIOAT",
+                            "2. Llenarlo con las respectivas cuentas definidas para evitar errores contables.",
+                            "3. La estructura Excel de Cifras SIOAT, está compuesta por dos hojas electrónicas. En la primera hoja encontrará la estructura definida, código de plan de cuentas único, la descripción de la cuenta y el valor correspondiente. En la segunda hoja encontrará el listado del plan único de cuentas como información adicional. Nota: En el momento de suministrar el código de cuenta en la hoja 1, automáticamente aparecerá la descripción de la cuenta, si el código no se encuentra en la lista aparecerá un error o probablemente no cuadrara con el cuadro de control SIOAT, cual no permitirá continuar con las demás tareas, tenga en cuenta que el programa reconocerá cada código corresponde con un total de seis (6) dígitos, si es menor o mayor a los dígitos habrá inconsistencias para subir el archivo, por ello tenga en cuenta el libro 2 que están definidas las cuentas predeterminadamente.",
+                            "4. Después de llenar cada una de las celdas en la planilla, deberá ingresar el valor total en el cuadro de seguimiento y control del total de los activos, pasivos, ingresos y costos, que se encontrará en la parte superior.",
+                            "5. Guarde la copia, por su seguridad cree una carpeta en un disco virtual y mantenga un duplicado para evitar pérdidas de información tributaria anual.",
+                            "6. Suba el archivo y espere que cargue, hasta que lo lleve a la interfaz de control de cifras para revisar si los datos se cargaron exitosamente. De ser exitoso, permitirá ir a la interfaz de tareas, de lo contrario revise los valores o el archivo de cifras SIOAT y repita el proceso.",
+                            "",
+                            "A continuación, realice la descarga de la plantilla para posteriormente subirla al sistema.",
+                            ""
+                        ],
+                        "width": 714
+                    },
+                    "name": "MyTextArea",
+                    "designerId": "975f222a-c19a-409d-ac83-0f67cf42a23b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "layout": "hbox",
+                "layout|flex": 1
+            },
+            "name": "MyContainer10",
+            "designerId": "207e3741-0ce0-4213-afe5-4799278a2aba",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "container|pack": "center",
+                        "height": 69,
+                        "layout": "hbox",
+                        "layout|flex": 1,
+                        "width": 170
+                    },
+                    "name": "MyContainer9",
+                    "designerId": "2ee8c908-e5dd-4ece-a12a-fdbb36e26841",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 100,
+                                "id": "btn_descargar_plantilla",
+                                "layout|flex": null,
+                                "maxHeight": 50,
+                                "text": "Descargar Plantilla cifras",
+                                "width": null
+                            },
+                            "name": "MyButton11",
+                            "designerId": "195d2a71-d663-4121-9de9-7a19ed6d87ab",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtn_descargar_plantillaClick",
+                                        "implHandler": [
+                                            "if(!navigator.onLine){",
+                                            "    SioatWeb.app.toast(SioatWeb.globals.TOASTID,SioatWeb.globals.TOASTMSJERROROFFLINE,SioatWeb.globals.TOASTTITLEALERTA);",
+                                            "}else{",
+                                            "    Ext.DomHelper.append(document.body, {",
+                                            "        tag: 'iframe',",
+                                            "        id:'downloadIframe',",
+                                            "        frameBorder: 0,",
+                                            "        width: 0,",
+                                            "        height: 0,",
+                                            "        css: 'display:none;visibility:hidden;height: 0px;',",
+                                            "        src: 'reportecontrolador/generarplantilla.action'",
+                                            "    });",
+                                            "}"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onBtn_descargar_plantillaClick",
+                                    "designerId": "a0056137-c742-41f1-820f-b7d4fc2c3ea2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": 10,
+                        "designer|displayName": "frm_carga",
+                        "header": false,
+                        "id": "frm_carga",
+                        "layout|flex": 1,
+                        "title": "My Form"
+                    },
+                    "name": "MyForm",
+                    "designerId": "ec915092-7a08-493b-aab3-514a65d1173e",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 69,
+                                "width": 293
+                            },
+                            "name": "MyContainer14",
+                            "designerId": "d19c9475-9aab-4642-b396-54ae8b28ec90",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.File",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "allowBlank": false,
+                                        "buttonText": "Subir",
+                                        "dock": "bottom",
+                                        "emptyText": "Documento ",
+                                        "fieldLabel": "Subir cifras",
+                                        "id": null,
+                                        "itemId": null,
+                                        "name": "plantilla",
+                                        "validateBlank": null
+                                    },
+                                    "name": "MyFileUpload",
+                                    "designerId": "391d4a11-2a3d-4e7f-bb84-8af7c1d4bb7b"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "CARGAR"
+                                    },
+                                    "name": "MyButton7",
+                                    "designerId": "44eed3e2-0d5c-4be1-8f21-cf62b7a51739",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick",
+                                                "implHandler": [
+                                                    "if(!navigator.onLine){",
+                                                    "    SioatWeb.app.toast(SioatWeb.globals.TOASTID,SioatWeb.globals.TOASTMSJERROROFFLINE,SioatWeb.globals.TOASTTITLEALERTA);",
+                                                    "}else{",
+                                                    "    var form = Ext.getCmp('frm_carga');",
+                                                    "    var file=Ext.getCmp('vtn_cargar_archivo').fileupload;",
+                                                    "    console.log(file);",
+                                                    "    if (form.isValid()){",
+                                                    "        form.submit({",
+                                                    "            url: 'reportecontrolador/cargarplantilla.action',",
+                                                    "            waitMsg: 'Cargando cifras ...',",
+                                                    "            success: function(fp, o){",
+                                                    "                SioatWeb.app.toast(SioatWeb.globals.TOASTID,'EXITO',SioatWeb.globals.TOASTTITLEALERTA);",
+                                                    "            },failure: function(response, opts){",
+                                                    "                SioatWeb.app.toast(SioatWeb.globals.TOASTID,'ERROR CARGANDO DATOS',SioatWeb.globals.TOASTTITLEALERTA);",
+                                                    "            }",
+                                                    "        });",
+                                                    "    }else{",
+                                                    "        SioatWeb.app.toast(SioatWeb.globals.TOASTID,'ARCHIVO NO CARGADO',SioatWeb.globals.TOASTTITLEALERTA);",
+                                                    "    }",
+                                                    "}",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick",
+                                            "designerId": "f3d41da5-06fe-41c8-ae8c-319d10cb606c"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

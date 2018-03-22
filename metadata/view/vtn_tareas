@@ -1,0 +1,755 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|userAlias": "vtn_tareas",
+        "designer|userClassName": "vtn_tareas",
+        "height": null,
+        "id": "vtn_tareas",
+        "layout": "vbox",
+        "modal": true,
+        "title": "TAREAS DE DECLARACIÓN DE RENTA Y COMPLEMENTARIOS O DE INGRESOS Y DE PATRIMONIO PARA PERSONAS JURIDICAS Y ASIMILADAS, PERSONAS NATURALES Y ASIMILADAS OBLIGADAS A LLEVAR CONTABILIDAD",
+        "width": 800
+    },
+    "name": "MyWindow",
+    "designerId": "8fb4a675-38c6-4261-b4be-762b224a9a6a",
+    "viewControllerInstanceId": "1ab5c894-57c9-4c5c-aae3-a6a522ba8c59",
+    "viewModelInstanceId": "8c18759a-77e9-4b21-b96e-d7660453f457",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "container|pack": "center",
+                "container|padding": 5,
+                "designer|displayName": "ctn_botones",
+                "flex": null,
+                "id": "ctn_botones1",
+                "layout": "hbox",
+                "layout|flex": 1,
+                "padding": null
+            },
+            "name": "MyContainer23",
+            "configAlternates": {
+                "container|align": "string",
+                "container|pack": "string",
+                "container|padding": "auto",
+                "designer|displayName": "string",
+                "flex": "number",
+                "id": "string",
+                "layout": "string",
+                "layout|flex": "number",
+                "padding": "auto"
+            },
+            "designerId": "d1d503f6-d6f1-4c32-9a0e-bc48f23dcd53",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "botones-general-tareas"
+                        ],
+                        "container|align": "stretch",
+                        "container|padding": null,
+                        "designer|displayName": "ctn_usuario",
+                        "layout": "vbox",
+                        "layout|flex": null,
+                        "margin": null
+                    },
+                    "name": "MyContainer",
+                    "configAlternates": {
+                        "cls": "typedarray",
+                        "container|align": "string",
+                        "container|padding": "auto",
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "margin": "auto"
+                    },
+                    "designerId": "4f67869a-c564-49f0-91bc-da678690ea4f",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "imagen-botones-tareas"
+                                ],
+                                "designer|displayName": "img_usuarios",
+                                "height": null,
+                                "padding": 5,
+                                "src": "resources/images/cifras.svg",
+                                "width": null
+                            },
+                            "name": "MyImg",
+                            "configAlternates": {
+                                "cls": "typedarray",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "src": "uri",
+                                "width": "auto"
+                            },
+                            "designerId": "4c9b1428-2ae2-42f7-b8cc-1c088882e15b"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": null,
+                                "cls": null,
+                                "componentCls": null,
+                                "height": null,
+                                "layout|flex": null,
+                                "text": "CIFRAS CONTROL SIOAT",
+                                "width": null
+                            },
+                            "name": "MyButton1",
+                            "configAlternates": {
+                                "baseCls": "string",
+                                "cls": "string",
+                                "componentCls": "string",
+                                "height": "auto",
+                                "layout|flex": "number",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "ef6e6f20-29e2-4381-81ff-4cf73269b2d0",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick11",
+                                        "implHandler": [
+                                            "Ext.getCmp('ctn_botones').setHidden(true);",
+                                            "Ext.getCmp('ctn_principal').setHidden(false);",
+                                            "Ext.getCmp('ctn_cuerpo').removeAll();",
+                                            "Ext.getCmp('ctn_cuerpo').add(Ext.widget('pnl_usuario')).show();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick11",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "4b3f8a0b-c5f8-4fdd-b760-3effa6cfbed0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "botones-general-tareas"
+                        ],
+                        "container|align": "stretch",
+                        "container|padding": null,
+                        "designer|displayName": "ctn_renta",
+                        "layout": "vbox",
+                        "layout|flex": null,
+                        "margin": null
+                    },
+                    "name": "MyContainer2",
+                    "configAlternates": {
+                        "cls": "typedarray",
+                        "container|align": "string",
+                        "container|padding": "auto",
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "margin": "auto"
+                    },
+                    "designerId": "fdc4c134-75a4-4eff-9200-ec00fb4f6649",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "imagen-botones-tareas"
+                                ],
+                                "designer|displayName": "img_restas",
+                                "height": null,
+                                "padding": 5,
+                                "src": "resources/images/activos.svg",
+                                "width": null
+                            },
+                            "name": "MyImg",
+                            "configAlternates": {
+                                "cls": "typedarray",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "src": "uri",
+                                "width": "auto"
+                            },
+                            "designerId": "66365374-fe1e-4d6f-9d15-0143345190aa"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": null,
+                                "layout|flex": null,
+                                "text": "ACTIVOS",
+                                "width": null
+                            },
+                            "name": "MyButton3",
+                            "configAlternates": {
+                                "height": "auto",
+                                "layout|flex": "number",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "7e0d4e47-dcf5-4015-8c95-715b472cc926",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick22",
+                                        "implHandler": [
+                                            "Ext.getCmp('ctn_botones').setHidden(true);",
+                                            "Ext.getCmp('ctn_principal').setHidden(false);",
+                                            "Ext.getCmp('ctn_cuerpo').removeAll();",
+                                            "Ext.getCmp('ctn_cuerpo').add(Ext.widget('pnl_cliente')).show();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick22",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "8d44540b-29d3-491e-84a9-3ebbcac2649c"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "botones-general-tareas"
+                        ],
+                        "container|align": "stretch",
+                        "container|padding": null,
+                        "designer|displayName": "ctn_documentos",
+                        "layout": "vbox",
+                        "layout|flex": null
+                    },
+                    "name": "MyContainer5",
+                    "configAlternates": {
+                        "cls": "typedarray",
+                        "container|align": "string",
+                        "container|padding": "auto",
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "layout|flex": "number"
+                    },
+                    "designerId": "ec5d1fba-1cfb-4817-a75e-d5e8681010a2",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "imagen-botones-tareas"
+                                ],
+                                "designer|displayName": "img_documento",
+                                "height": null,
+                                "src": "resources/images/pasivos.svg",
+                                "width": null
+                            },
+                            "name": "MyImg",
+                            "configAlternates": {
+                                "cls": "typedarray",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "src": "uri",
+                                "width": "auto"
+                            },
+                            "designerId": "998005f3-edff-4b26-be52-40d62a23446d"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": null,
+                                "layout|flex": null,
+                                "text": "PASIVOS",
+                                "width": null
+                            },
+                            "name": "MyButton3",
+                            "configAlternates": {
+                                "height": "auto",
+                                "layout|flex": "number",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "232388a4-688c-404a-bb5e-2bf280e78c55",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick211",
+                                        "implHandler": [
+                                            "Ext.getCmp('ctn_cuerpo').removeAll();",
+                                            "Ext.getCmp('ctn_cuerpo').add(Ext.widget('pnl_rentas')).show();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick211",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "42b8cedf-0bca-4459-a7f7-6a407d3e2837"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "container|pack": "center",
+                "container|padding": null,
+                "designer|displayName": "ctn_botones",
+                "flex": null,
+                "id": "ctn_botones2",
+                "layout": "hbox",
+                "layout|flex": 1,
+                "padding": 5
+            },
+            "name": "MyContainer18",
+            "configAlternates": {
+                "container|align": "string",
+                "container|pack": "string",
+                "container|padding": "auto",
+                "designer|displayName": "string",
+                "flex": "number",
+                "id": "string",
+                "layout": "string",
+                "layout|flex": "number",
+                "padding": "auto"
+            },
+            "designerId": "ed734632-e87e-4ec0-8bbb-cfde35e98627",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "botones-general-tareas"
+                        ],
+                        "container|align": "stretch",
+                        "container|padding": null,
+                        "designer|displayName": "ctn_usuario",
+                        "layout": "vbox",
+                        "layout|flex": null,
+                        "margin": null
+                    },
+                    "name": "MyContainer",
+                    "configAlternates": {
+                        "cls": "typedarray",
+                        "container|align": "string",
+                        "container|padding": "auto",
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "margin": "auto"
+                    },
+                    "designerId": "d0460a0d-bc8a-4734-a113-558d082409d9",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "imagen-botones-tareas"
+                                ],
+                                "designer|displayName": "img_usuarios",
+                                "height": null,
+                                "src": "resources/images/ingresos.svg",
+                                "width": null
+                            },
+                            "name": "MyImg",
+                            "configAlternates": {
+                                "cls": "typedarray",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "src": "uri",
+                                "width": "auto"
+                            },
+                            "designerId": "1185fa2a-9516-4598-b567-601d19020d46"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": null,
+                                "cls": null,
+                                "componentCls": null,
+                                "height": null,
+                                "layout|flex": null,
+                                "text": "INGRESOS",
+                                "width": null
+                            },
+                            "name": "MyButton1",
+                            "configAlternates": {
+                                "baseCls": "string",
+                                "cls": "string",
+                                "componentCls": "string",
+                                "height": "auto",
+                                "layout|flex": "number",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "9a1788f2-62bf-4dce-ba09-db2369ed0576",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick111",
+                                        "implHandler": [
+                                            "Ext.getCmp('ctn_botones').setHidden(true);",
+                                            "Ext.getCmp('ctn_principal').setHidden(false);",
+                                            "Ext.getCmp('ctn_cuerpo').removeAll();",
+                                            "Ext.getCmp('ctn_cuerpo').add(Ext.widget('pnl_usuario')).show();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick111",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "97be91f9-575e-40ae-be91-bf75f5610e16"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "botones-general-tareas"
+                        ],
+                        "container|align": "stretch",
+                        "container|padding": null,
+                        "designer|displayName": "ctn_renta",
+                        "layout": "vbox",
+                        "layout|flex": null,
+                        "margin": null
+                    },
+                    "name": "MyContainer2",
+                    "configAlternates": {
+                        "cls": "typedarray",
+                        "container|align": "string",
+                        "container|padding": "auto",
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "margin": "auto"
+                    },
+                    "designerId": "5aa63586-ed39-4dc0-ba04-76a187621bc8",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "imagen-botones-tareas"
+                                ],
+                                "designer|displayName": "img_restas",
+                                "height": null,
+                                "padding": 5,
+                                "src": "resources/images/costos.svg",
+                                "width": null
+                            },
+                            "name": "MyImg",
+                            "configAlternates": {
+                                "cls": "typedarray",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "src": "uri",
+                                "width": "auto"
+                            },
+                            "designerId": "f3f1d6e8-da4f-4419-bfb2-d8b2bbff6847"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": null,
+                                "layout|flex": null,
+                                "text": "COSTOS",
+                                "width": null
+                            },
+                            "name": "MyButton3",
+                            "configAlternates": {
+                                "height": "auto",
+                                "layout|flex": "number",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "6f7832b6-746c-4465-90a3-a0c75d985414",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick221",
+                                        "implHandler": [
+                                            "Ext.getCmp('ctn_botones').setHidden(true);",
+                                            "Ext.getCmp('ctn_principal').setHidden(false);",
+                                            "Ext.getCmp('ctn_cuerpo').removeAll();",
+                                            "Ext.getCmp('ctn_cuerpo').add(Ext.widget('pnl_cliente')).show();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick221",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "4917425a-a0cb-482d-b9df-8b46fd79f671"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "botones-general-tareas"
+                        ],
+                        "container|align": "stretch",
+                        "container|padding": null,
+                        "designer|displayName": "ctn_documentos",
+                        "layout": "vbox",
+                        "layout|flex": null
+                    },
+                    "name": "MyContainer5",
+                    "configAlternates": {
+                        "cls": "typedarray",
+                        "container|align": "string",
+                        "container|padding": "auto",
+                        "designer|displayName": "string",
+                        "layout": "string",
+                        "layout|flex": "number"
+                    },
+                    "designerId": "be15e47d-1dbe-4887-9f34-74977c85cc59",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "imagen-botones-tareas"
+                                ],
+                                "designer|displayName": "img_documento",
+                                "height": null,
+                                "src": "resources/images/rentas.svg",
+                                "width": null
+                            },
+                            "name": "MyImg",
+                            "configAlternates": {
+                                "cls": "typedarray",
+                                "designer|displayName": "string",
+                                "height": "auto",
+                                "src": "uri",
+                                "width": "auto"
+                            },
+                            "designerId": "1c921521-d18f-4c6a-99d7-5b216afd9744"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": null,
+                                "layout|flex": null,
+                                "text": "RENTA FORMULARIO 110",
+                                "width": null
+                            },
+                            "name": "MyButton3",
+                            "configAlternates": {
+                                "height": "auto",
+                                "layout|flex": "number",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "922a2d36-703b-421b-818d-105990a1bd56",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick2111",
+                                        "implHandler": [
+                                            "Ext.getCmp('ctn_cuerpo').removeAll();",
+                                            "Ext.getCmp('ctn_cuerpo').add(Ext.widget('pnl_rentas')).show();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick2111",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "a02655b4-0a46-40a2-b13c-b5b7ba32fdea"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "vtn_cliente",
+        "designer|userClassName": "vtn_clienteViewModel"
+    },
+    "name": "vtn_usuarioViewModel1",
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "cb89c131-456d-4452-a44a-255bd6d20788"
+}

@@ -1,0 +1,84 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "store_cliente",
+        "model": "model_cliente",
+        "storeId": "store_cliente"
+    },
+    "name": "MyJsonStore",
+    "designerId": "219eed13-30c8-4574-b175-5a2fcf586f7d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{",
+                    "read: 'clientecontrolador/listar',",
+                    "create: 'clientecontrolador/crear',",
+                    "update: 'clientecontrolador/actualizar',",
+                    "destroy: 'clientecontrolador/eliminar'",
+                    "}"
+                ]
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "0e1d8fba-68f2-4df0-be08-7c8aa2bf3c88",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "messageProperty": "message",
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "3de6c79d-feb9-4591-a2b5-d502f3b0f528"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowSingle": false
+                    },
+                    "name": "MyJsonWriter2",
+                    "designerId": "2c0f3a19-a3d6-4f67-821e-545c1189e86b"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAjaxException",
+                        "implHandler": [
+                            "SioatWeb.app.showError(proxy, operation, this);"
+                        ],
+                        "name": "exception",
+                        "scope": "me"
+                    },
+                    "name": "onAjaxException",
+                    "designerId": "19049420-f3fc-45e3-b51f-ee4358b65c90"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnl_documento",
+        "designer|userClassName": "pnl_documentoViewModel"
+    },
+    "designerId": "e577657d-450f-4ada-a38f-91020c3c5a96"
+}

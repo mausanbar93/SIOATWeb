@@ -1,0 +1,96 @@
+{
+    "name": "sioat",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "6.2.1.29",
+            "frameworkVersion": "6.0.2.437"
+        },
+        "urlPrefix": "http://localhost:1841/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "exportPath": "",
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed",
+        "sdkPath": "",
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}"
+    },
+    "xdsVersion": "3.5.1",
+    "xdsBuild": 348,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext60",
+    "viewOrderMap": {
+        "view": [
+            "44e0fd7f-4c1e-4bd9-9494-684360d174f1",
+            "caf9ff22-74ba-4cda-b955-6f3c2544755f",
+            "febba204-b9f4-4fb7-864e-012010bc1cb5",
+            "8cac41e1-dbb9-4d05-bdec-3ba85070bc31",
+            "e6dfa02c-c89c-4c03-9854-5e76613fa866",
+            "a986cd08-9304-4910-9f7f-08acb0259bc2",
+            "1c161978-a859-4768-a916-bb115efb9955",
+            "5e086306-9b12-4bb0-955f-cb09650274a4",
+            "62532577-921a-4de9-8524-6c91851a6131",
+            "cb89c131-456d-4452-a44a-255bd6d20788",
+            "b1382781-8d10-4db0-80de-e46b94ebfb1d",
+            "0fe317aa-5ee3-45b5-ba52-fa50c720124f",
+            "2f34a62b-0846-46f4-a7f8-a68c0d290b00",
+            "490d3680-0c2f-44ad-b528-77647341bc3f",
+            "c3974ab8-3ddd-4ab2-8c20-deb09277b31d",
+            "2f1a4713-7d80-431e-b769-4379e98029e2",
+            "ddc0df51-8942-4314-bd91-cac1c98c86a1",
+            "6e2f6628-87b9-4dc2-a864-7d2ab938ca19",
+            "ef48527f-fe68-4814-a80d-49d6c6b8936a",
+            "e300c253-2cef-4742-ad03-c6b138a83c4d",
+            "12dca136-fea1-4f51-a159-ede7421cca30",
+            "a300d05a-016a-410d-8b0a-5c5e396d1f6d",
+            "a2cfd0f1-8392-4eec-8f59-f545eeaa9297",
+            "64cefcfc-cbf6-44d9-b7b0-fc83f571a076",
+            "8fb4a675-38c6-4261-b4be-762b224a9a6a",
+            "8c18759a-77e9-4b21-b96e-d7660453f457",
+            "1ab5c894-57c9-4c5c-aae3-a6a522ba8c59",
+            "ef1c29d4-7720-4bcc-b733-baa3ca1979c4",
+            "e577657d-450f-4ada-a38f-91020c3c5a96",
+            "7a478c04-ef2c-4638-b315-8d58afd2b353"
+        ],
+        "store": [
+            "219eed13-30c8-4574-b175-5a2fcf586f7d",
+            "fe5d3328-31c5-4c18-9ed1-8c5938a876ec",
+            "55375d4a-8a8e-4f15-a968-9fffafa8c8a7",
+            "a61ab922-75f3-44c2-b834-26aa5db2357d",
+            "507031b6-f9ce-4ee3-b612-0886b66f5424",
+            "e9b0a2f6-4563-4b2b-ae08-4e944db7b5a9",
+            "7efe682b-1ff9-45cd-8ead-fa782a90d5c5"
+        ],
+        "controller": [],
+        "model": [
+            "364a2ea6-6308-43aa-ba13-201a9931360d",
+            "dd8e6e8a-fc54-43ac-b19f-dc92598520e5",
+            "4ad3f944-bc00-4072-b763-5367e772cbbf",
+            "c1403cf0-79e1-4155-a553-5426328913cd"
+        ],
+        "resource": [
+            "d6da57da-9937-4be9-8a51-698f582ebebe",
+            "cd9aee81-13f7-439b-8443-18998bd51803",
+            "083486ef-3adc-4e8e-b7ac-80114b326c52"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

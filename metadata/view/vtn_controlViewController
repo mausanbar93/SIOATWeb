@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "vtn_control",
+        "designer|userClassName": "vtn_controlViewController"
+    },
+    "designerId": "64cefcfc-cbf6-44d9-b7b0-fc83f571a076"
+}

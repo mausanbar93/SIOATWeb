@@ -1,0 +1,231 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "bodyPadding": 20,
+        "container|align": "stretch",
+        "designer|userAlias": "vtn_control",
+        "designer|userClassName": "vtn_control",
+        "height": 400,
+        "hidden": false,
+        "id": "vtn_control",
+        "layout": "hbox",
+        "modal": true,
+        "title": "CONTROL DE BALANCE SIOAT",
+        "width": 655
+    },
+    "name": "MyWindow",
+    "designerId": "a300d05a-016a-410d-8b0a-5c5e396d1f6d",
+    "viewControllerInstanceId": "64cefcfc-cbf6-44d9-b7b0-fc83f571a076",
+    "viewModelInstanceId": "a2cfd0f1-8392-4eec-8f59-f545eeaa9297",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "margin": "0 20 0 0"
+            },
+            "name": "MyContainer16",
+            "designerId": "63db4e60-9ca3-43c0-b876-05270b4ffa41",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoLoad": true,
+                        "height": 300,
+                        "title": "Resumen datos"
+                    },
+                    "name": "MyGridPanel2",
+                    "designerId": "8a58915f-06c6-4e96-bb0e-8b75d7c670c7",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "Código cuenta"
+                            },
+                            "name": "MyColumn10",
+                            "designerId": "d4844635-55f2-4269-8d76-65e15b1a2dbf"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "number",
+                                "text": "Nombre cuenta"
+                            },
+                            "name": "MyNumberColumn1",
+                            "designerId": "6b8ee342-de0c-45ee-afe1-964c10464200"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "date",
+                                "text": "Valor"
+                            },
+                            "name": "MyDateColumn2",
+                            "designerId": "488a63b0-3788-4263-84e8-bb591c942063"
+                        },
+                        {
+                            "type": "Ext.view.Table",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyTable2",
+                            "designerId": "6bb6416a-b426-44c6-b50a-15b0aea6faf3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": null,
+                "layout|flex": 1,
+                "margin": null
+            },
+            "name": "MyContainer17",
+            "designerId": "73f004d1-8ac2-449a-a2d1-fc3cdec988ae",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoLoad": true,
+                        "title": "Observación"
+                    },
+                    "name": "MyGridPanel1",
+                    "designerId": "c3dff657-71fc-4eaf-8603-c9a47f4c0a8e",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "Datos de cuenta"
+                            },
+                            "name": "MyColumn9",
+                            "designerId": "95e78bc7-66a7-4390-90ad-8d8ffe3adc9b"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "number",
+                                "text": "Valor"
+                            },
+                            "name": "MyNumberColumn",
+                            "designerId": "86b6d7a5-b9f6-43f7-8a8d-8381ca749293"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "date",
+                                "text": "Observación"
+                            },
+                            "name": "MyDateColumn1",
+                            "designerId": "6f27a65b-d822-4a6b-91a3-9032ecbcfe11"
+                        },
+                        {
+                            "type": "Ext.view.Table",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 120
+                            },
+                            "name": "MyTable1",
+                            "designerId": "299e19c5-ba7f-4993-b38c-c346ba42f4e9"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.File",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "buttonText": "Cargar",
+                        "designer|displayName": "vtn_control",
+                        "emptyText": "documento nuevo",
+                        "fieldLabel": "Cargar  nuevamente archivo"
+                    },
+                    "name": "MyFileUpload1",
+                    "designerId": "f76fcd1f-9e95-4703-9583-6d34014551c7"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btn_tareas",
+                        "text": "Ir a tareas"
+                    },
+                    "name": "MyButton12",
+                    "designerId": "86f74e02-2c77-413d-b11a-5b7596e099d1"
+                }
+            ]
+        }
+    ]
+}

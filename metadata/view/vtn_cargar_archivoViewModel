@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "vtn_cargar_archivo",
+        "designer|userClassName": "vtn_cargar_archivoViewModel"
+    },
+    "designerId": "e300c253-2cef-4742-ad03-c6b138a83c4d"
+}

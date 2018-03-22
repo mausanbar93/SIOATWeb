@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "vtn_cargar_archivo",
+        "designer|userClassName": "vtn_cargar_archivoViewController"
+    },
+    "designerId": "12dca136-fea1-4f51-a159-ede7421cca30"
+}

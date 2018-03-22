@@ -1,0 +1,1348 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|userAlias": "vtn_cliente",
+        "designer|userClassName": "vtn_cliente",
+        "dock": null,
+        "id": "vtn_cliente",
+        "layout": "vbox",
+        "modal": true,
+        "title": "REGISTRO CLIENTE SIOAT",
+        "width": 450
+    },
+    "name": "vtn_usuario1",
+    "configAlternates": {
+        "autoShow": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "dock": "string",
+        "height": "auto",
+        "id": "string",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "container|align": "string",
+        "layout": "string"
+    },
+    "designerId": "5e086306-9b12-4bb0-955f-cb09650274a4",
+    "viewControllerInstanceId": "0fe317aa-5ee3-45b5-ba52-fa50c720124f",
+    "viewModelInstanceId": "cb89c131-456d-4452-a44a-255bd6d20788",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "stretch",
+                "designer|createAlias": null,
+                "designer|displayName": "frm_cliente",
+                "flex": 1,
+                "height": 500,
+                "id": "frm_cliente",
+                "layout": "vbox",
+                "modal": true,
+                "scrollable": true,
+                "title": "Nuevo cliente",
+                "width": null
+            },
+            "name": "MyForm1",
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "container|align": "string",
+                "designer|createAlias": "string",
+                "designer|displayName": "string",
+                "flex": "number",
+                "height": "auto",
+                "layout": "string",
+                "title": "string",
+                "width": "auto",
+                "id": "string",
+                "scrollable": "boolean"
+            },
+            "designerId": "bad408ea-3d30-4656-ac73-6fd5570e22de",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "autoLoadOnValue": true,
+                        "blankText": "Campo obligatorio",
+                        "designer|displayName": "cbx_tipo_contribuyente",
+                        "displayField": "nombre",
+                        "emptyText": "Seleccionar ...",
+                        "fieldLabel": "Tipo de contribuyente:",
+                        "id": "cbx_tipo_contribuyente",
+                        "layout|flex": null,
+                        "name": "idTipoContribuyente",
+                        "store": "store_tipo_contribuyente",
+                        "validateBlank": true,
+                        "valueField": "id"
+                    },
+                    "name": "MyComboBox",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|displayName": "string",
+                        "displayField": "datafield",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "name": "string",
+                        "store": "store",
+                        "validateBlank": "boolean",
+                        "valueField": "datafield"
+                    },
+                    "designerId": "672e6731-9987-40a0-b59b-d623a6488694"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "Campo obligatorio",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_nit_cliente",
+                        "dock": null,
+                        "emptyText": "Ingresar NIT",
+                        "fieldLabel": "Número de Identificación Tributaria (NIT)",
+                        "id": "txt_nit_cliente",
+                        "inputType": null,
+                        "invalidText": "Este campo solo deben ser números",
+                        "maskRe": "/[0-9]/",
+                        "maxLength": 10,
+                        "maxLengthText": "El número maximo de digitos es 10",
+                        "minLength": 8,
+                        "minLengthText": "El minimo número de digitos es 8",
+                        "name": "nit",
+                        "validateBlank": true,
+                        "vtype": null,
+                        "width": 380
+                    },
+                    "name": "MyTextField2",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "dock": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "inputType": "string",
+                        "invalidText": "string",
+                        "maskRe": "regex",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "name": "string",
+                        "validateBlank": "boolean",
+                        "vtype": "string",
+                        "width": "auto"
+                    },
+                    "designerId": "c773268a-34c5-49a2-8efa-78726adeeed4",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTxt_nit_clienteChange",
+                                "implHandler": [
+                                    "if(newValue.trim().length >= 8  && newValue.trim().length <= 10){",
+                                    "    Ext.getCmp('txt_digito_verificacion').setValue(SioatWeb.app.digito_verificacion(newValue));",
+                                    "}else{",
+                                    "    Ext.getCmp('txt_digito_verificacion').setValue();",
+                                    "}"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onTxt_nit_clienteChange",
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "designerId": "1aee38d5-9f0f-4bef-b524-c324fff7f11e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_digito_verificacion",
+                        "disabled": true,
+                        "emptyText": "Digito calculado",
+                        "fieldLabel": "Digíto de verificación (cálculo automático)",
+                        "id": "txt_digito_verificacion",
+                        "layout|flex": null,
+                        "name": "digitoVerificacion"
+                    },
+                    "name": "MyTextField6",
+                    "configAlternates": {
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "disabled": "boolean",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "name": "string"
+                    },
+                    "designerId": "8cb6096f-96f9-4399-b997-9bc17e3452fd"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "Campo obligatorio",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_nombres_cliente",
+                        "emptyText": "Ingresar nombre (s)",
+                        "fieldLabel": "Nombre (s)",
+                        "id": "txt_nombres_cliente",
+                        "layout|flex": null,
+                        "maxLength": 45,
+                        "maxLengthText": "El número maximo de caracteres es 45",
+                        "minLength": 4,
+                        "minLengthText": "El número minimo de caracteres es 4",
+                        "name": "nombre",
+                        "validateBlank": true
+                    },
+                    "name": "MyTextField",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "name": "string",
+                        "validateBlank": "boolean"
+                    },
+                    "designerId": "1f562b49-ed26-47d5-a8b9-9ab1ee13dfeb"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "Campo obligatorio",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_apellidos_cliente",
+                        "emptyText": "Ingresar apellido (s)",
+                        "fieldLabel": "Apellido (s)",
+                        "id": "txt_apellidos_cliente",
+                        "layout|flex": null,
+                        "maxLength": 45,
+                        "maxLengthText": "El número maximo de caracteres es 45",
+                        "minLength": 4,
+                        "minLengthText": "El número minimo de caracteres es 4",
+                        "name": "apellido",
+                        "validateBlank": true
+                    },
+                    "name": "MyTextField1",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "name": "string",
+                        "validateBlank": "boolean"
+                    },
+                    "designerId": "b92f4941-8062-4c7d-b87c-4f423e9f1496"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "rad_correcion",
+                        "fieldLabel": "¿Correción de formulario?",
+                        "id": "rad_correcion",
+                        "layout|flex": null,
+                        "padding": "0 0 10 0",
+                        "width": 400
+                    },
+                    "name": "MyRadioGroup3",
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "padding": "auto",
+                        "width": "auto"
+                    },
+                    "designerId": "3ed48e39-2da1-45d0-9b3b-f96b13c69532",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "SI",
+                                "designer|displayName": "rad_correcion_si",
+                                "fieldLabel": null,
+                                "id": "rad_tcp_si1"
+                            },
+                            "name": "MyRadio2",
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "designer|displayName": "string",
+                                "fieldLabel": "string",
+                                "id": "string"
+                            },
+                            "designerId": "28b98524-b006-41f8-94c6-0221f278f004",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onRad_tcp_si1Change",
+                                        "implHandler": [
+                                            "if(newValue){",
+                                            "    Ext.getCmp('txt_codigo_formulario').setDisabled(false);",
+                                            "    Ext.getCmp('txt_formulario_anterior').setDisabled(false);",
+                                            "}",
+                                            "else{",
+                                            "    Ext.getCmp('txt_codigo_formulario').setDisabled(true);",
+                                            "    Ext.getCmp('txt_formulario_anterior').setDisabled(true);",
+                                            "}"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "name": "onRad_tcp_si1Change",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "e83fe65f-3f0b-40eb-9573-59418146edc3"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "NO",
+                                "designer|displayName": "rad_correcion_no",
+                                "fieldLabel": null,
+                                "id": "rad_correcion_no"
+                            },
+                            "name": "MyRadio3",
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "designer|displayName": "string",
+                                "fieldLabel": "string",
+                                "id": "string"
+                            },
+                            "designerId": "dddc2cbe-9680-444c-9ef4-ac2b3ab618ea"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "blankText": "Campo no obligatorio",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_codigo_formulario",
+                        "disabled": true,
+                        "emptyText": "Digitar codigo",
+                        "fieldLabel": "Código formulario",
+                        "id": "txt_codigo_formulario",
+                        "layout|flex": null,
+                        "maxLength": 6,
+                        "maxLengthText": "El número maximo de digitos es 6",
+                        "minLength": 4,
+                        "minLengthText": "El número minimo de digitos es 4",
+                        "name": "codigoFormulario"
+                    },
+                    "name": "MyTextField3",
+                    "configAlternates": {
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "disabled": "boolean",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "name": "string"
+                    },
+                    "designerId": "e43b49f9-2020-45bd-8f74-eabbe954cc0b"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "blankText": "Campo no obligatorio",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_formulario_anterior",
+                        "disabled": true,
+                        "emptyText": "Digitar formulario a corregir",
+                        "fieldLabel": "Formulario anterior",
+                        "id": "txt_formulario_anterior",
+                        "layout|flex": null,
+                        "maxLength": 45,
+                        "maxLengthText": "El número maximo de digitos es 45",
+                        "minLength": 8,
+                        "minLengthText": "El número minimo de digitos es 8",
+                        "name": "formulario_anterior"
+                    },
+                    "name": "MyTextField7",
+                    "configAlternates": {
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "disabled": "boolean",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "name": "string"
+                    },
+                    "designerId": "896102fc-5a1b-4590-9ba1-eb35d2f915ac"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "rad_tcp",
+                        "fieldLabel": "¿Trabajador por Cuenta Propia?",
+                        "id": "rad_tcp",
+                        "layout|flex": null,
+                        "width": 400
+                    },
+                    "name": "MyRadioGroup1",
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "width": "auto"
+                    },
+                    "designerId": "85ece1c3-7610-4078-bb5b-f6d61a4ce623",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "SI",
+                                "designer|displayName": "rad_tcp_si",
+                                "fieldLabel": null,
+                                "id": "rad_tcp_si",
+                                "name": "tpc"
+                            },
+                            "name": "MyRadio2",
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "designer|displayName": "string",
+                                "fieldLabel": "string",
+                                "id": "string",
+                                "name": "string"
+                            },
+                            "designerId": "61fe3f8c-b029-410d-825f-ee50625d3960"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "NO",
+                                "designer|displayName": "rad_tcp_no",
+                                "fieldLabel": null,
+                                "id": "rad_tcp_no",
+                                "name": "tpc"
+                            },
+                            "name": "MyRadio3",
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "designer|displayName": "string",
+                                "fieldLabel": "string",
+                                "id": "string",
+                                "name": "string"
+                            },
+                            "designerId": "00a89c9f-9bb5-4158-9022-08f6ce706866"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "SIN CLASIFICACIÓN",
+                                "designer|displayName": "rad_tcp_sinclasificacion",
+                                "fieldLabel": null,
+                                "id": "rad_tcp_sinclasificacion",
+                                "name": "tpc"
+                            },
+                            "name": "MyRadio4",
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "designer|displayName": "string",
+                                "fieldLabel": "string",
+                                "id": "string",
+                                "name": "string"
+                            },
+                            "designerId": "e18caa52-86a2-4be0-aeca-b9ad6db3b1c7"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_razon_cliente",
+                        "emptyText": "Ingresar nombre razón social",
+                        "fieldLabel": "Razón Social",
+                        "id": "txt_razon_cliente",
+                        "layout|flex": null,
+                        "maxLength": 45,
+                        "maxLengthText": "El número maximo de caracteres es 45",
+                        "minLength": 5,
+                        "minLengthText": "El número minimo de caracteres es 5",
+                        "name": "razonSocial",
+                        "validateBlank": true
+                    },
+                    "name": "MyTextField4",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "name": "string",
+                        "validateBlank": "boolean"
+                    },
+                    "designerId": "a1fd9473-1a7a-41b1-be48-a063841dc117"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "Campo obligatorio",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_direccion_cliente",
+                        "emptyText": "Ingresar dirección",
+                        "fieldLabel": "Dirección razon social:",
+                        "id": "txt_direccion_cliente",
+                        "layout|flex": null,
+                        "maxLength": 45,
+                        "maxLengthText": "El número maximo de caracteres es 45",
+                        "minLength": 10,
+                        "minLengthText": "El número minimo de caracteres es 10",
+                        "validateBlank": true
+                    },
+                    "name": "MyTextField13",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "validateBlank": "boolean"
+                    },
+                    "designerId": "475cf1c6-cece-42dc-84a8-4001865c30b1"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "autoLoadOnValue": true,
+                        "blankText": "Campo obligatorio",
+                        "designer|displayName": "cbx_codigo_adminitracion",
+                        "displayField": "nombre",
+                        "emptyText": "seleccionar...",
+                        "fieldLabel": "Código de administración",
+                        "id": "cbx_codigo_adminitracion",
+                        "layout|flex": null,
+                        "name": "idCodigoAdministracion",
+                        "store": "store_codigo_administracion",
+                        "validateBlank": true,
+                        "valueField": "id"
+                    },
+                    "name": "MyComboBox1",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|displayName": "string",
+                        "displayField": "datafield",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "name": "string",
+                        "store": "store",
+                        "validateBlank": "boolean",
+                        "valueField": "datafield"
+                    },
+                    "designerId": "7b1d25b8-dc23-43c7-9960-36bee1cdc6b6"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoLoadOnValue": true,
+                        "designer|displayName": "cbx_tipo_responsabilidad",
+                        "displayField": "nombre",
+                        "emptyText": "Seleccionar...",
+                        "fieldLabel": "Tipo de Responsabilidad",
+                        "id": "cbx_tipo_responsabilidad",
+                        "layout|flex": null,
+                        "name": "idTipoResponsabilidad",
+                        "store": "store_tipo_responsabilidad",
+                        "valueField": "id"
+                    },
+                    "name": "MyComboBox2",
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "displayField": "datafield",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "name": "string",
+                        "store": "store",
+                        "valueField": "datafield"
+                    },
+                    "designerId": "b8b75478-a53f-47ab-939c-6ceefbc0ee54"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoLoadOnValue": true,
+                        "blankText": "Seleccionar Actividad",
+                        "designer|displayName": "cbx_actividad_economica",
+                        "displayField": "nombre",
+                        "emptyText": "Seleccionar ...",
+                        "fieldLabel": "Actividad Económica",
+                        "id": "cbx_actividad_economica",
+                        "layout|flex": null,
+                        "msgTarget": "side",
+                        "name": "actividad_economica",
+                        "store": "store_actividad_economica",
+                        "valueField": "id"
+                    },
+                    "name": "MyComboBox3",
+                    "configAlternates": {
+                        "blankText": "string",
+                        "designer|displayName": "string",
+                        "displayField": "datafield",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "msgTarget": "string",
+                        "name": "string",
+                        "store": "store",
+                        "valueField": "datafield"
+                    },
+                    "designerId": "8cb69f88-af88-4d18-b683-71f7b23b9448",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onCbx_actividad_economicaChange",
+                                "implHandler": [
+                                    "console.log('anterior: '+oldValue+ 'nuevo: ' +newValue);",
+                                    "if(newValue !== oldValue){",
+                                    "    var store= Ext.getStore('store_sub_actividad');",
+                                    "    store.load({",
+                                    "        params: {",
+                                    "            actividad: newValue",
+                                    "        },",
+                                    "        callback: function (records, operation, success){",
+                                    "            Ext.getCmp('cbx_sub_actividad_economica').setValue(null);",
+                                    "            Ext.getCmp('cbx_sub_actividad_economica').setDisabled(false);",
+                                    "        }",
+                                    "    });",
+                                    "}"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onCbx_actividad_economicaChange",
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "designerId": "972c6363-b6e0-4755-be08-168501e80e5d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoLoadOnValue": true,
+                        "blankText": "Selecciona actividad",
+                        "designer|displayName": "cbx_sub_actividad_economica",
+                        "disabled": true,
+                        "displayField": "nombre",
+                        "emptyText": "Seleccionar...",
+                        "fieldLabel": "Sub-actividad Económica",
+                        "id": "cbx_sub_actividad_economica",
+                        "layout|flex": null,
+                        "name": "idActividadEconomica",
+                        "store": "store_sub_actividad",
+                        "valueField": "id"
+                    },
+                    "name": "MyComboBox4",
+                    "configAlternates": {
+                        "blankText": "string",
+                        "designer|displayName": "string",
+                        "disabled": "boolean",
+                        "displayField": "datafield",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "name": "string",
+                        "store": "store",
+                        "valueField": "datafield"
+                    },
+                    "designerId": "0cb6aaf9-875c-40e7-9cc5-189f2acf8703"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "blankText": "Campo requerido",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_nit_firmante",
+                        "emptyText": "Ingresar nit",
+                        "fieldLabel": "Número de Identificación Tributaria (NIT) firmante de renta",
+                        "id": "txt_nit_firmante",
+                        "layout|flex": null,
+                        "maxLength": 11,
+                        "maxLengthText": "El número maximo de digitos es 11",
+                        "minLength": 8,
+                        "minLengthText": "El número minimo de digitos es 8",
+                        "name": "nitFirmantel",
+                        "validateBlank": true
+                    },
+                    "name": "MyTextField5",
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "name": "string",
+                        "validateBlank": "boolean"
+                    },
+                    "designerId": "ed011a89-f548-4090-a077-781366ef7995",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTxt_nit_firmanteChange",
+                                "implHandler": [
+                                    "if(newValue.trim().length >= 8 && newValue.trim().length <= 10){",
+                                    "    Ext.getCmp('txt_digito_verificacion_firmante').setValue(SioatWeb.app.digito_verificacion(newValue));",
+                                    "}else{",
+                                    "    Ext.getCmp('txt_digito_verificacion_firmante').setValue();",
+                                    "}"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onTxt_nit_firmanteChange",
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "designerId": "28ad1c88-4f40-4194-8584-8c30f585b115"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_digito_verificacion_firmante",
+                        "disabled": true,
+                        "fieldLabel": "Digíto de verificación (cálculo automático)",
+                        "id": "txt_digito_verificacion_firmante",
+                        "layout|flex": null,
+                        "name": "digitoVerificacionFirmante"
+                    },
+                    "name": "MyTextField9",
+                    "configAlternates": {
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "disabled": "boolean",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "name": "string"
+                    },
+                    "designerId": "9a1de275-97ba-4695-9260-fdfec847dc66"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "blankText": "Ingresar tarjeta profesional",
+                        "designer|createAlias": "",
+                        "designer|displayName": "txt_tarjeta_profesional",
+                        "emptyText": "Ingresar tarjeta profesional",
+                        "fieldLabel": "Número tarjeta profesional",
+                        "id": "txt_tarjeta_profesional",
+                        "layout|flex": null,
+                        "maxLength": 11,
+                        "maxLengthText": "El número maximo de digitos 11",
+                        "minLength": 8,
+                        "minLengthText": "El número minimo de digitos 8",
+                        "name": "numeroTarjetaRevisor"
+                    },
+                    "name": "MyTextField11",
+                    "configAlternates": {
+                        "blankText": "string",
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "emptyText": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "minLength": "number",
+                        "minLengthText": "string",
+                        "name": "string"
+                    },
+                    "designerId": "15d1eb9f-34ea-42c0-a8f1-3b944f1217a8"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "",
+                        "designer|displayName": "rad_tipo_revisor",
+                        "fieldLabel": "Código Tipo de revisor",
+                        "hidden": true,
+                        "id": "rad_tipo_revisor",
+                        "layout|flex": null,
+                        "padding": "0 0 10 0"
+                    },
+                    "name": "MyRadioGroup",
+                    "configAlternates": {
+                        "designer|createAlias": "string",
+                        "designer|displayName": "string",
+                        "fieldLabel": "string",
+                        "hidden": "boolean",
+                        "id": "string",
+                        "padding": "auto"
+                    },
+                    "designerId": "f8e35584-0d20-4e37-869d-e0623f22d088",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "Revisor fiscal",
+                                "designer|createAlias": "",
+                                "designer|displayName": "rad_revisor_fiscal",
+                                "dock": null,
+                                "fieldLabel": null,
+                                "id": "rad_revisor_fiscal"
+                            },
+                            "name": "MyRadio",
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "designer|createAlias": "string",
+                                "designer|displayName": "string",
+                                "dock": "string",
+                                "fieldLabel": "string",
+                                "id": "string"
+                            },
+                            "designerId": "626e6adc-7281-4d95-9e64-0b6cedc74d48"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "Contador Público",
+                                "designer|createAlias": "",
+                                "designer|displayName": "rad_contador_publico",
+                                "fieldLabel": null,
+                                "id": "rad_contador_publico",
+                                "tabIndex": null
+                            },
+                            "name": "MyRadio1",
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "designer|createAlias": "string",
+                                "designer|displayName": "string",
+                                "fieldLabel": "string",
+                                "id": "string",
+                                "tabIndex": "number"
+                            },
+                            "designerId": "c707e979-2c91-4d8c-a635-6b635eeee532"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "alignTarget": null,
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "designer|displayName": "ctn_botones",
+                        "dock": null,
+                        "flex": null,
+                        "height": 43,
+                        "layout": "hbox",
+                        "width": 496
+                    },
+                    "name": "MyContainer2",
+                    "configAlternates": {
+                        "alignTarget": "string",
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "dock": "string",
+                        "flex": "number",
+                        "height": "auto",
+                        "layout": "string",
+                        "width": "auto",
+                        "designer|displayName": "string"
+                    },
+                    "designerId": "7a4caaee-5f41-4bf3-bb2b-69ba5a17bd2f",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "btn_cancelar",
+                                "margin": "0 10 0 0",
+                                "text": "CANCELAR",
+                                "width": 100
+                            },
+                            "name": "MyButton9",
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "margin": "auto",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "21a25ed0-a00a-47ed-a765-729509d45c4f",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick",
+                                        "implHandler": [
+                                            "Ext.getCmp('vtn_cliente').close();",
+                                            "SioatWeb.app.toast(SioatWeb.globals.TOASTID,SioatWeb.globals.TOASTMSJOPERACIONCANCELADA,SioatWeb.globals.TOASTTITLEMENSAJE);"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "45929395-45d0-41f0-9857-6ffc9efb3bd3"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|createAlias": "",
+                                "designer|displayName": "btn_accion",
+                                "id": "btn_accion_cliente",
+                                "text": "AGREGAR",
+                                "width": 100
+                            },
+                            "name": "MyButton2",
+                            "configAlternates": {
+                                "designer|createAlias": "string",
+                                "designer|displayName": "string",
+                                "id": "string",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "c18624a6-3af5-465b-8244-56baf65d248e",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtn_guardar_clienteClick",
+                                        "implHandler": [
+                                            "if(!navigator.onLine){",
+                                            "    SioatWeb.app.toast(SioatWeb.globals.TOASTID,SioatWeb.globals.TOASTMSJERROROFFLINE,SioatWeb.globals.TOASTTITLEALERTA);",
+                                            "}else{",
+                                            "    var form = button.up('form').getForm();",
+                                            "    if(form.isValid()){",
+                                            "        this.mask('Registrando cliente, por favor espere');",
+                                            "        var me=this;",
+                                            "        var values = form.getValues();",
+                                            "        var store = Ext.getStore('store_cliente');",
+                                            "        store.getProxy().getWriter().setWriteRecordId(false);",
+                                            "        store.add({",
+                                            "            nombres: values.nombres,",
+                                            "            apellidos: values.apellidos,",
+                                            "            username: values.username,",
+                                            "            password: values.password,",
+                                            "            tipoIdentificacion: values.tipoIdentificacion,",
+                                            "            identificacion: values.identificacion,",
+                                            "            cargo: values.cargo,",
+                                            "            correo: values.correo,",
+                                            "            direccion: values.direccion,",
+                                            "            movil: values.movil,",
+                                            "            fechaNacimiento: values.fechaNacimiento",
+                                            "        });",
+                                            "        store.sync({",
+                                            "            callback: function(batch, eOpts){",
+                                            "                var resp;",
+                                            "                if(batch.operations[0].success){",
+                                            "                    resp = batch.operations[0]._resultSet.total;",
+                                            "                    if(resp > 0){",
+                                            "                        SioatWeb.app.toast(SioatWeb.globals.TOASTID,SioatWeb.globals.TOASTMSJOPERACIONEXITOSA,SioatWeb.globals.TOASTTITLEMENSAJE);",
+                                            "                        me.unmask();",
+                                            "                        button.up('#vtn_cliente').close();",
+                                            "                    }",
+                                            "                }else if(batch.operations[0].failure){",
+                                            "                    SioatWeb.app.toast(SioatWeb.globals.TOASTID,SioatWeb.globals.TOASTMSJERRORSERVIDOR,SioatWeb.globals.TOASTTITLEALERTA);",
+                                            "                    me.unmask();",
+                                            "                    button.up('#vtn_cliente').close();",
+                                            "                }else{",
+                                            "                    me.unmask();",
+                                            "                }",
+                                            "            }",
+                                            "        });",
+                                            "    }else{",
+                                            "        SioatWeb.app.toast(SioatWeb.globals.TOASTID,SioatWeb.globals.TOASTMSJFORMULARIOINVALIDO,SioatWeb.globals.TOASTTITLEALERTA);",
+                                            "    }",
+                                            "}"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onBtn_guardar_clienteClick",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "5a9f10f1-17d5-49ff-b231-f0d7c6215dcb"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "id": "btn_accion_guardar_cliente",
+                                "text": "GUARDAR",
+                                "width": 100
+                            },
+                            "name": "MyButton10",
+                            "configAlternates": {
+                                "hidden": "boolean",
+                                "id": "string",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "designerId": "8907c1a6-722a-4e01-8873-22f928e795d3",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtn_accion_guardarClick",
+                                        "implHandler": [
+                                            "if(!navigator.onLine){",
+                                            "    SioatWeb.app.toast(SioatWeb.globals.TOASTID,SioatWeb.globals.TOASTMSJERROROFFLINE,SioatWeb.globals.TOASTTITLEALERTA);",
+                                            "}else{",
+                                            "    var form = button.up('form').getForm();",
+                                            "    var grid = Ext.getCmp('gridClientes');",
+                                            "    if(form.isValid()){",
+                                            "        this.mask('Actualizando cliente, por favor espere');",
+                                            "        var me=this;",
+                                            "        var record = form.getRecord(),",
+                                            "            values = form.getValues();",
+                                            "        record.set(values);",
+                                            "        grid.getSelectionModel().select(record);",
+                                            "        var store = Ext.getStore('store_cliente');",
+                                            "        store.getProxy().getWriter().setWriteRecordId(true);",
+                                            "        store.update({",
+                                            "            nombres: values.nombres,",
+                                            "            apellidos: values.apellidos,",
+                                            "            loginUsername: values.username,",
+                                            "            loginPassword: values.password,",
+                                            "            tipoIdentificacion: values.tipoIdentificacion,",
+                                            "            identificacion: values.identificacion,",
+                                            "            idCargo: values.cargo,",
+                                            "            correo: values.correo,",
+                                            "            direccion: values.direccion,",
+                                            "            fechaNacimiento: values.fechaNacimiento",
+                                            "        });",
+                                            "        store.sync({",
+                                            "            callback: function(batch, eOpts){",
+                                            "                var resp;",
+                                            "                if(batch.operations[0].success){",
+                                            "                    resp = batch.operations[0]._resultSet.total;",
+                                            "                    if(resp > 0){",
+                                            "                        SioatWeb.app.toast(SioatWeb.globals.TOASTID,SioatWeb.globals.TOASTMSJOPERACIONEXITOSA,SioatWeb.globals.TOASTTITLEMENSAJE);",
+                                            "                        me.unmask();",
+                                            "                        button.up('#vtn_cliente').close();",
+                                            "                    }",
+                                            "                }else if(batch.operations[0].failure){",
+                                            "                    SioatWeb.app.toast(SioatWeb.globals.TOASTID,SioatWeb.globals.TOASTMSJERRORSERVIDOR,SioatWeb.globals.TOASTTITLEALERTA);",
+                                            "                    me.unmask();",
+                                            "                    button.up('#vtn_cliente').close();",
+                                            "                }else{",
+                                            "                    me.unmask();",
+                                            "                }",
+                                            "            }",
+                                            "        });",
+                                            "    }else{",
+                                            "        SioatWeb.app.toast(SioatWeb.globals.TOASTID,SioatWeb.globals.TOASTMSJFORMULARIOINVALIDO,SioatWeb.globals.TOASTTITLEALERTA);",
+                                            "    }",
+                                            "}"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onBtn_accion_guardarClick",
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "designerId": "ab21242c-8371-4362-930a-e9d5150364b0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
